@@ -23,7 +23,7 @@ const Technologies = () => {
       <motion.h2
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         initial={{ opacity: 0, y: -100, scale: 0.8 }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 1 }}
         className="my-20 text-center text-4xl"
       >
         Technologies
