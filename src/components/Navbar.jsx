@@ -10,7 +10,7 @@ const Navbar = () => {
       </div>
       <div className="btn">
         <motion.a
-          href="/Prerak_Patel_Resume.docx"
+          href="/portfolio/Prerak_Patel_Resume.docx"
           download="Prerak_Patel_Resume.docx"
           className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300"
         >
