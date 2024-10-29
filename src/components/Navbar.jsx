@@ -4,17 +4,36 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <div className="mb-20 flex items-center justify-between py-6">
+    <div className=" mb-20 flex items-center justify-between py-6">
       <div className="flex flex-shrink-0 items-center">
         <img src={logo} alt="logo" className="h-[36px] mx-2 w-11" />
       </div>
       <div className="btn">
         <motion.a
-          href="/portfolio/Prerak_Patel_Resume.docx"
+          href="http://localhost:5173/portfolio/Prerak_Patel_Resume.docx"
           download="Prerak_Patel_Resume.docx"
-          className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300"
+          initial={{ "--x": "100%", scale: 1 }}
+          animate={{ "--x": "-100%" }}
+          transition={{
+            repeat: Infinity,
+            repeatType: "loop",
+            repeatDelay: 1,
+            type: "spring",
+            stiffness: 20,
+            damping: 15,
+            mass: 2,
+            scale: {
+              type: "spring",
+              stiffness: 10,
+              damping: 5,
+              mass: 0.1,
+            },
+          }}
+          className="px-6 py-2 rounded-md relative radial-gradient"
         >
-          Download Resume
+          <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask">
+            Download My CV
+          </span>
         </motion.a>
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
