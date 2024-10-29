@@ -101,7 +101,7 @@ export const PROJECTS = [
     description:
       "A fully functional clone of the popular Wordle game built with React. Includes features like keyboard input, word validation, and dynamic game modes (easy and hard). Designed with responsive layouts to ensure a smooth experience across devices.",
     technologies: ["React", "JavaScript", "CSS", "Framer Motion"],
-    link: "https://codechallange-prerak-wordle-game.netlify.app/",
+    link: "https://22prerak22.github.io/wordlegame/",
   },
   {
     title: "Portfolio Website",
