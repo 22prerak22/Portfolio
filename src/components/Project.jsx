@@ -34,7 +34,19 @@ const Project = () => {
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h6 className="mb-2 font-semibold">{project.title}</h6>
+              <h6 className="mb-2 font-semibold">
+                {project.title}
+                <span className="text-sm pl-3 text-purple-100 ">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-purple-100"
+                  >
+                    View Project
+                  </a>
+                </span>
+              </h6>
               <p className="mb-4 text-neutral-400 text-justify">
                 {project.description}
               </p>

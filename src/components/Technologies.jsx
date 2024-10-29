@@ -42,7 +42,6 @@ const Technologies = () => {
             right: 0,
             bottom: 0,
           }}
-          whileTap={{ scale: 0.9 }}
           variants={iconVariants(2.5)}
           initial="inital"
           animate="animate"
@@ -51,6 +50,13 @@ const Technologies = () => {
           <RiReactjsLine className="text-7xl text-cyan-400" />
         </motion.div>
         <motion.div
+          drag
+          dragConstraints={{
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+          }}
           variants={iconVariants(3)}
           initial="inital"
           animate="animate"
@@ -59,6 +65,13 @@ const Technologies = () => {
           <TbBrandNextjs className="text-7xl text-white" />
         </motion.div>
         <motion.div
+          drag
+          dragConstraints={{
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+          }}
           variants={iconVariants(5)}
           initial="inital"
           animate="animate"
@@ -67,6 +80,13 @@ const Technologies = () => {
           <SiRedux className="text-7xl text-purple-600" />
         </motion.div>
         <motion.div
+          drag
+          dragConstraints={{
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+          }}
           variants={iconVariants(2)}
           initial="inital"
           animate="animate"
@@ -75,6 +95,13 @@ const Technologies = () => {
           <SiTypescript className="text-7xl text-blue-500" />
         </motion.div>
         <motion.div
+          drag
+          dragConstraints={{
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+          }}
           variants={iconVariants(6)}
           initial="inital"
           animate="animate"

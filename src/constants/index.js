@@ -1,74 +1,127 @@
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project4 from "../assets/projects/project-4.png";
 
-export const HERO_CONTENT = `I am a passionate Front-End developer with a knack for crafting robust and scalable web applications. With 6+ years of hands-on experience, I have honed my skills in front-end technologies like React, JavaScript, and Tailwind CSS. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+// Hero section content
+export const HERO_CONTENT = `I am a Senior Front-End Developer with 7+ years of experience building high-performance, scalable web and mobile applications. Expert in React, Next.js, and TypeScript, I specialize in creating dynamic user interfaces and reusable components. My passion lies in delivering seamless user experiences through optimized code and innovative solutions.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile Front-End developer with a passion for creating efficient and user-friendly web applications. With 6+ years of professional experience, I have worked with technologies like React, Jest, Tailwind CSS, and JavaScript. My journey in web development began with curiosity about how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active by going to the gym, exploring new technologies, and contributing to personal projects like a Personal Expense Tracker and Wordle Game.`;
+// About section content
+export const ABOUT_TEXT = `With over 7 years of expertise in front-end development, I have led and contributed to projects that focus on React, Next.js, and TypeScript. My experience spans across designing scalable, responsive applications and integrating third-party libraries and APIs for enhanced functionality. I am skilled in using Redux for state management and implementing best practices in testing with Jest. I am driven by a desire to build intuitive, high-quality products that align with business goals while continuously learning and applying cutting-edge technologies.`;
 
+// Experience section content
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Front-End Developer",
+    year: "Sep 2023 - Present",
+    role: "Sr. Frontend Developer",
     company: "Starbucks",
-    description: `Working on enhancing user interfaces and building web applications. Implementing features using React.js, JavaScript, and Jest. Collaborating with the team to deliver front-end solutions and optimize web performance.`,
-    technologies: ["JavaScript", "React.js", "Jest", "CSS Modules"],
+    description: `Designed reusable React components and hooks to enhance performance and consistency. Integrated third-party APIs to improve functionality and scalability. Implemented responsive design principles across various devices and leveraged Redux Toolkit for efficient state management.`,
+    technologies: [
+      "React 18",
+      "Redux",
+      "Redux Toolkit",
+      "TypeScript",
+      "SCSS",
+      "NodeJS",
+      "Jest",
+    ],
   },
   {
-    year: "2022 - 2023",
-    role: "Front-End Developer",
-    company: "Ascendion",
-    description: `Developed responsive user interfaces and reusable components using React.js and JavaScript. Worked on optimizing front-end performance and integrating APIs. Collaborated with designers to convert Figma designs into functional UI components.`,
-    technologies: ["React.js", "JavaScript", "Figma", "API integration"],
+    year: "Oct 2021 - Aug 2023",
+    role: "Web Developer",
+    company: "Bureau Veritas",
+    description: `Developed user interfaces using React, Bootstrap, and Next.js. Integrated MongoDB for database management and handled unit testing with Jest and Postman. Collaborated with business analysts to ensure technical requirements were met.`,
+    technologies: [
+      "React 17",
+      "Bootstrap",
+      "Next.js",
+      "NodeJS",
+      "MongoDB",
+      "Redux",
+      "JIRA",
+    ],
   },
   {
-    year: "2020 - 2022",
-    role: "Frontend Developer",
-    company: "Bell (Canada)",
-    description: `Designed and developed user interfaces for internal and external applications. Implemented complex features and ensured cross-browser compatibility. Worked on improving the user experience and implementing responsive designs.`,
-    technologies: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
+    year: "Mar 2020 - Sep 2021",
+    role: "UI Developer",
+    company: "Refresh Financial",
+    description: `Built a reusable component library for mobile applications using React Native. Developed a single-page application with responsive design and incorporated third-party APIs for real-time updates.`,
+    technologies: [
+      "React Native",
+      "TypeScript",
+      "Docker",
+      "Kubernetes",
+      "Jest",
+      "Material UI",
+    ],
   },
   {
-    year: "2018 - 2020",
-    role: "Software Developer",
-    company: "Method",
-    description: `Developed full-stack applications using React.js and Node.js. Designed and implemented APIs and handled backend integration. Worked closely with stakeholders to ensure project success.`,
-    technologies: ["React.js", "Node.js", "MySQL", "MongoDB"],
+    year: "Jan 2019 - Feb 2020",
+    role: "UI Developer",
+    company: "Acumen Capital Partners",
+    description: `Designed and developed screens using React.js and Redux. Conducted unit testing with Mocha and collaborated closely with clients and business analysts.`,
+    technologies: [
+      "React.js",
+      "Redux",
+      "JavaScript",
+      "jQuery",
+      "Mocha",
+      "AJAX",
+    ],
+  },
+  {
+    year: "Oct 2017 - Dec 2018",
+    role: "Web Developer",
+    company: "Michelin North America",
+    description: `Designed user interfaces with React JS, jQuery, and Bootstrap. Worked on server-side application development using Spring Boot and Hibernate.`,
+    technologies: [
+      "ReactJS",
+      "NodeJS",
+      "jQuery",
+      "Bootstrap",
+      "Spring Boot",
+      "JIRA",
+    ],
   },
 ];
 
+// Projects section content
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Personal Expense Tracker",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "A React-based application for tracking personal expenses. Features include adding, editing, and categorizing expenses, as well as visualizing financial data through charts. Utilized Firebase for user authentication and real-time data storage.",
+    technologies: ["React", "Redux", "JavaScript", "Chart.js", "Firebase"],
+    link: "https://codechallange-prerak-expense-tracker.netlify.app/",
   },
   {
-    title: "Task Management App",
+    title: "Wordle Game Clone",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "A fully functional clone of the popular Wordle game built with React. Includes features like keyboard input, word validation, and dynamic game modes (easy and hard). Designed with responsive layouts to ensure a smooth experience across devices.",
+    technologies: ["React", "JavaScript", "CSS", "Framer Motion"],
+    link: "https://codechallange-prerak-wordle-game.netlify.app/",
   },
   {
     title: "Portfolio Website",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "A responsive portfolio website showcasing my projects, skills, and contact information. Built using React and Tailwind CSS, it highlights my work in front-end development with a modern, mobile-first design.",
+    technologies: ["React", "Tailwind CSS", "JavaScript", "GitHub Pages"],
+    link: "https://22prerak22.github.io/portfolio/",
   },
   {
-    title: "Blogging Platform",
+    title: "AI-Powered 3D T-Shirt Designer",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "A 3D T-Shirt color picker that allows users to visualize and customize T-Shirt colors in real-time. Features AI-based color suggestions and animations for an engaging user experience. Built using Three.js and OpenAI API.",
+    technologies: ["Three.js", "OpenAI API", "CSS", "JavaScript"],
+    link: "https://dynamic-smakager-59803e.netlify.app/",
   },
 ];
 
+// Contact information
 export const CONTACT = {
   address: "6 Denim Drive, Brampton, L6P1K4",
   phoneNo: "+1 647 544 0695",
