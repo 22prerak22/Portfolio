@@ -10,8 +10,8 @@ const Navbar = () => {
       </div>
       <div className="btn">
         <motion.a
-          href="/portfolio/Prerak_Patel_Resume.docx"
-          download="Prerak_Patel_Resume.docx"
+          href="/portfolio/Resume_Prerak_Patel.docx"
+          download="Resume_Prerak_Patel.docx"
           initial={{ "--x": "100%", scale: 1 }}
           animate={{ "--x": "-100%" }}
           transition={{
